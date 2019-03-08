@@ -1,2 +1,2 @@
 # react-redux-CRUD
-A CRUD using React + Redux + my react component: ReactDynamicForms
+A CRUD project using React + Redux + my react component: ReactDynamicForms
