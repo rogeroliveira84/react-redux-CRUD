@@ -1,0 +1,56 @@
+{
+    "name": "@rogeroliveira84/react-redux-crud",
+    "version": "0.1.0",
+    "private": true,
+    "licence": "MIT",
+    "description": "A react application using the react-dynamic-forms with redux",
+    "homepage": "https://github.com/rogeroliveira84/react-redux-crud",
+    "author": "Roger Oliveira <rogeroliveira84@gmail.com> (https://www.linkedin.com/in/rogeroliveira/)",
+    "contributors": [
+        "Roger Oliveira <rogeroliveira84@gmail.com> (https://github.com/rogeroliveira84)"
+    ],
+    "keywords": [
+        "javascript",
+        "react",
+        "redux",
+        "dynamic"
+    ],
+    "repository": "github:rogeroliveira84/react-redux-crud",
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "3.0.1"
+    },
+    "devDependencies": {
+        "enzyme": "^3.9.0",
+        "enzyme-adapter-react-16": "^1.10.0",
+        "enzyme-to-json": "^3.3.5",
+        "eslint-plugin-react-hooks": "^1.3.0",
+        "react-test-renderer": "^16.8.3"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "test:watch": "react-scripts test --env=jsdom --watch",
+        "test:coverage": "react-scripts test --env=jsdom --coverage",
+        "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
+        "eject": "react-scripts eject",
+        "deploy": "gh-pages -m ‘auto commit [ci skip]’ -d dist"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
