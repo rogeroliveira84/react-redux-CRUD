@@ -1,0 +1,67 @@
+/*----------------------- general -----------------------*/
+$text-width: 180px;
+$table-width: 20%;
+
+.link {
+  color: rgb(3, 100, 190);
+  cursor: pointer;
+}
+
+.link:hover {
+  font-weight: bold;
+  background-color: #ececec;
+}
+
+/* TABLE */
+
+.table {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: $table-width;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.table-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px solid #e0e0e0;
+  border-collapse: collapse;
+  padding-top: 5px;
+}
+
+.text {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 20px;
+  color: #535353;
+  width: $text-width;
+}
+
+.table-row.header {
+  padding-bottom: 5px;
+  background-color: #e6e6e6;
+  font-weight: bold;
+  color: #777777;
+}
+
+/*----------------------- local -----------------------*/
+
+.client-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

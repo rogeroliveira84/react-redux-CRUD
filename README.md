@@ -25,4 +25,3 @@ TBC soon
 ### License
 
 ReactReduxCRUD is [MIT licensed](./LICENSE).
-
