@@ -1,6 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import './index.scss';
+
+const ClientEdit = React.lazy(() => import('../client-edit'));
 
 function addClientAction(name) {
     return { type: 'ADD_CLIENT', name }
@@ -19,6 +22,14 @@ export default function ClientList() {
         console.log(`edit: ${value.target.value}`);
     }
 
+    function clientEdit() {
+        return (
+            <div>
+                <ClientEdit />
+            </div>
+        )
+    }
+
     return (
         <div className="client-list">
             <h1>Clients</h1>
@@ -32,11 +43,12 @@ export default function ClientList() {
                 {
                     clients.map(client =>
                         <div key={client} className="table-row link" onClick={handleEdit}>
-                            {client}
+                            <Link to="/edit">{client}</Link>
                         </div>
                     )
                 }
             </div>
+            <Route path="/edit/:name" component={clientEdit} />
         </div>
     );
 }
